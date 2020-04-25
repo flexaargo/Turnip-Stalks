@@ -15,6 +15,10 @@
 		D040E02C2453C8C500C87DDA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D040E02B2453C8C500C87DDA /* Preview Assets.xcassets */; };
 		D040E02F2453C8C500C87DDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D040E02D2453C8C500C87DDA /* LaunchScreen.storyboard */; };
 		D040E03A2453C8C500C87DDA /* Turnip_StalksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D040E0392453C8C500C87DDA /* Turnip_StalksTests.swift */; };
+		D0E5B5FE2453E00A00287BA4 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0E5B5FD2453E00A00287BA4 /* Colors.xcassets */; };
+		D0E5B6042453E0F000287BA4 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E5B6032453E0F000287BA4 /* Colors.swift */; };
+		D0E5B6072453EFD700287BA4 /* DayInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E5B6062453EFD700287BA4 /* DayInput.swift */; };
+		D0E5B60A2453F69D00287BA4 /* BellsInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E5B6092453F69D00287BA4 /* BellsInputView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,10 @@
 		D040E0352453C8C500C87DDA /* Turnip StalksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Turnip StalksTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D040E0392453C8C500C87DDA /* Turnip_StalksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Turnip_StalksTests.swift; sourceTree = "<group>"; };
 		D040E03B2453C8C500C87DDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0E5B5FD2453E00A00287BA4 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		D0E5B6032453E0F000287BA4 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		D0E5B6062453EFD700287BA4 /* DayInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayInput.swift; sourceTree = "<group>"; };
+		D0E5B6092453F69D00287BA4 /* BellsInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BellsInputView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +117,9 @@
 			isa = PBXGroup;
 			children = (
 				D040E04A2453C91000C87DDA /* Models */,
+				D0E5B6082453F68D00287BA4 /* Views */,
 				D040E0472453C90500C87DDA /* Screens */,
+				D0E5B5FF2453E0C200287BA4 /* Utilities */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -118,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				D040E0282453C8C500C87DDA /* Assets.xcassets */,
+				D0E5B5FD2453E00A00287BA4 /* Colors.xcassets */,
 				D040E02D2453C8C500C87DDA /* LaunchScreen.storyboard */,
 				D040E02A2453C8C500C87DDA /* Preview Content */,
 			);
@@ -146,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				D040E04B2453C99400C87DDA /* CoreData */,
+				D0E5B6062453EFD700287BA4 /* DayInput.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -156,6 +168,38 @@
 				D040E0232453C8C400C87DDA /* Turnip_Stalks.xcdatamodeld */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		D0E5B5FF2453E0C200287BA4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D0E5B6012453E0E200287BA4 /* Colors */,
+				D0E5B6002453E0CE00287BA4 /* Extensions */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		D0E5B6002453E0CE00287BA4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D0E5B6012453E0E200287BA4 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				D0E5B6032453E0F000287BA4 /* Colors.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		D0E5B6082453F68D00287BA4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D0E5B6092453F69D00287BA4 /* BellsInputView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D040E02F2453C8C500C87DDA /* LaunchScreen.storyboard in Resources */,
+				D0E5B5FE2453E00A00287BA4 /* Colors.xcassets in Resources */,
 				D040E02C2453C8C500C87DDA /* Preview Assets.xcassets in Resources */,
 				D040E0292453C8C500C87DDA /* Assets.xcassets in Resources */,
 			);
@@ -260,7 +305,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D040E0202453C8C400C87DDA /* AppDelegate.swift in Sources */,
+				D0E5B6042453E0F000287BA4 /* Colors.swift in Sources */,
 				D040E0222453C8C400C87DDA /* SceneDelegate.swift in Sources */,
+				D0E5B60A2453F69D00287BA4 /* BellsInputView.swift in Sources */,
+				D0E5B6072453EFD700287BA4 /* DayInput.swift in Sources */,
 				D040E0272453C8C400C87DDA /* ContentView.swift in Sources */,
 				D040E0252453C8C400C87DDA /* Turnip_Stalks.xcdatamodeld in Sources */,
 			);
